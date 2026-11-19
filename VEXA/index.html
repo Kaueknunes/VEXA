@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VEXA — Encontre o que movimenta seu dia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+    <div class="intro-screen" id="introScreen">
+    <div class="intro-content">
+        <img src="assets/img/logo.png" alt="VEXA" class="intro-logo">
+        <div class="intro-line"></div>
+    </div>
+
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="lg" viewBox="0 0 120 70">
+<polygon points="12,12 38,12 54,44 88,4 110,4 64,64 46,64" fill="#fff"/>
+<ellipse cx="60" cy="38" rx="56" ry="17" transform="rotate(-24 60 38)" fill="none" stroke="#fff" stroke-width="3.2" stroke-dasharray="250 60" stroke-linecap="round"/>
+</symbol>
+</defs>
+</svg>
+
+<header>
+<div class="wrap nav">
+<a href="#inicio" class="logo" aria-label="VEXA">
+<img class="lgo" src="assets/img/logo.png" alt="VEXA">
+</a>
+
+<nav id="menu">
+<ul>
+<li><a href="#inicio">Início</a></li>
+<li><a href="#produtos">Produtos</a></li>
+<li><a href="#categorias">Categorias</a></li>
+<li><a href="#sobre">Sobre nós</a></li>
+</ul>
+</nav>
+
+<a href="#produtos" class="btn pu cta">Ver ofertas <span class="ar">→</span></a>
+
+<button class="burger" id="bg" aria-label="Abrir menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+<div class="wrap">
+<div class="hero-content">
+
+
+
+<h1 class="rv" style="--d:.1s">
+    Encontre o que <em>movimenta</em> seu dia.
+</h1>
+
+<p class="rv" style="--d:.2s">
+Descubra produtos, encontre novas possibilidades e escolha aquilo que faz sentido para você.
+</p>
+
+<a href="#produtos" class="btn rv" style="--d:.3s">
+Explorar produtos <span class="ar">→</span>
+</a>
+
+<div class="perks rv" style="--d:.4s">
+<span><b>Entrega rápida</b></span>
+<span><b>Compra segura</b></span>
+<span><b>Suporte especializado</b></span>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="categorias">
+<div class="wrap">
+<div class="head rv">
+<div>
+<div class="eyebrow">Categorias</div>
+<h2>Escolha seu caminho.</h2>
+</div>
+</div>
+
+<div class="cats">
+
+<a href="#produtos" class="cat rv">
+<svg viewBox="0 0 200 160">
+<rect x="20" y="20" width="160" height="100" rx="12" fill="#111" stroke="#6d35ff" stroke-width="3"/>
+<rect x="60" y="130" width="80" height="8" rx="4" fill="#8f73d6"/>
+<path d="M30 100 C70 60 110 90 170 40" stroke="#6d35ff" stroke-width="4" fill="none"/>
+</svg>
+<h3>Tecnologia</h3>
+<span>Fones, relógios e gadgets</span>
+</a>
+
+<a href="#produtos" class="cat rv" style="--d:.1s">
+<svg viewBox="0 0 200 160">
+<path d="M100 20 L170 70 V140 H30 V70Z" fill="#26262c" stroke="#8f73d6" stroke-width="3"/>
+<rect x="85" y="95" width="30" height="45" fill="#6d35ff"/>
+</svg>
+<h3>Casa</h3>
+<span>Conforto no dia a dia</span>
+</a>
+
+<a href="#produtos" class="cat rv" style="--d:.2s">
+<svg viewBox="0 0 200 160">
+<circle cx="100" cy="85" r="52" fill="none" stroke="#fff" stroke-width="10"/>
+<circle cx="100" cy="85" r="52" fill="none" stroke="#6d35ff" stroke-width="10" stroke-dasharray="90 240"/>
+</svg>
+<h3>Acessórios</h3>
+<span>Detalhes que completam</span>
+</a>
+
+<a href="#produtos" class="cat rv" style="--d:.3s">
+<svg viewBox="0 0 200 160">
+<path d="M60 120 L110 30 L150 50 L100 140Z" fill="#6d35ff"/>
+</svg>
+<h3>Utilidades</h3>
+<span>Praticidade</span>
+</a>
+
+</div>
+</div>
+</section>
+
+<section id="produtos" style="padding-top:20px">
+<div class="wrap">
+<div class="head rv">
+<div>
+<div class="eyebrow">Em destaque</div>
+<h2>Para começar a descobrir.</h2>
+</div>
+<a href="#" class="btn">Ver tudo <span class="ar">→</span></a>
+</div>
+
+<div class="prods" id="prods"></div>
+
+<p class="note rv">
+* Produtos e preços ilustrativos, apenas para demonstração visual.
+</p>
+</div>
+</section>
+
+<section class="about" id="sobre">
+<div class="wrap">
+
+<div>
+<div class="eyebrow rv">Sobre nós</div>
+
+<h2 class="rv" style="--d:.1s">
+Mais do que encontrar produtos. Descobrir possibilidades.
+</h2>
+
+<p class="rv" style="--d:.2s;margin-top:22px">
+A VEXA nasce para tornar a escolha simples e fluida: curadoria clara, navegação ágil e a confiança de comprar com praticidade. Do essencial ao inesperado, tudo pensado para acompanhar o ritmo do seu dia.
+</p>
+
+<a href="#inicio" class="btn pu rv" style="--d:.3s">
+Conhecer a VEXA <span class="ar">→</span>
+</a>
+</div>
+
+<div class="motto rv" style="--d:.2s">
+<span>Descubra.</span>
+<span>Escolha.</span>
+<span>Receba.</span>
+<i>✦</i>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<div class="fg">
+
+<div>
+<a href="#inicio" class="logo">
+<img class="lgo" alt="VEXA">
+</a>
+
+<p style="margin-top:16px">
+Modernidade, fluidez e confiança para o seu dia a dia.
+</p>
+
+<div class="soc">
+<a href="#" aria-label="Instagram">IG</a>
+<a href="#" aria-label="TikTok">TT</a>
+<a href="#" aria-label="YouTube">YT</a>
+<a href="#" aria-label="LinkedIn">in</a>
+</div>
+</div>
+
+<div>
+<h4>Navegação</h4>
+<ul>
+<li><a href="#inicio">Início</a></li>
+<li><a href="#produtos">Produtos</a></li>
+<li><a href="#categorias">Categorias</a></li>
+<li><a href="#sobre">Sobre nós</a></li>
+</ul>
+</div>
+
+<div>
+<h4>Institucional</h4>
+<ul>
+<li><a href="#">Quem somos</a></li>
+<li><a href="#">Privacidade</a></li>
+<li><a href="#">Termos de uso</a></li>
+</ul>
+</div>
+
+<div>
+<h4>Contato</h4>
+<ul>
+<li>contato.vexa@gmail.com</li>
+<li>São Paulo, Brazil</li>
+</ul>
+</div>
+
+</div>
+
+<div class="copy">
+<span>© 2026 VEXA. Todos os direitos reservados.</span>
+<span>Página demonstrativa — versão visual 1.0</span>
+</div>
+</div>
+</footer>
+
+<script>
+var P=[
+{n:"Fone Aura",c:"Tecnologia",p:"R$ 349,90",s:'<circle cx="50" cy="55" r="30" fill="#111" stroke="#6d35ff" stroke-width="3"/><rect x="42" y="10" width="14" height="30" rx="7" fill="#8f73d6"/>'},
+{n:"Luminária Arco",c:"Casa",p:"R$ 189,00",s:'<path d="M30 90 H70 M50 90 V40 Q50 15 78 22" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="78" cy="24" r="9" fill="#6d35ff"/>'},
+{n:"Relógio Órbita",c:"Acessórios",p:"R$ 459,00",s:'<rect x="36" y="8" width="28" height="84" rx="6" fill="#26262c"/><circle cx="50" cy="50" r="26" fill="#111" stroke="#fff" stroke-width="4"/><path d="M50 50 V34 M50 50 L60 56" stroke="#6d35ff" stroke-width="3"/>'},
+{n:"Garrafa Fluxo",c:"Utilidades",p:"R$ 89,90",s:'<rect x="34" y="22" width="32" height="70" rx="9" fill="#17171a" stroke="#fff" stroke-width="3"/><rect x="38" y="8" width="24" height="14" rx="4" fill="#8f73d6"/><path d="M34 60 H66" stroke="#6d35ff" stroke-width="5"/>'}
+];
+
+var h="";
+
+P.forEach(function(x,i){
+h+='<article class="prod rv" style="--d:'+(i*.1)+'s"><div class="pimg"><svg viewBox="0 0 100 100">'+x.s+'</svg></div><div class="pb"><div class="pc">'+x.c+'</div><h3>'+x.n+'</h3><div class="price">'+x.p+'</div><button class="btn" type="button">Ver produto</button></div></article>';
+});
+
+document.getElementById("prods").innerHTML=h;
+
+var logoHeader=document.querySelector("header img.lgo");
+var logoFooter=document.querySelector("footer img.lgo");
+
+if(logoHeader && logoFooter && !logoFooter.getAttribute("src")){
+    logoFooter.src=logoHeader.getAttribute("src");
+}
+
+var bg=document.getElementById("bg");
+var m=document.getElementById("menu");
+
+bg.onclick=function(){
+    var o=m.classList.toggle("open");
+    bg.classList.toggle("on",o);
+    bg.setAttribute("aria-expanded",o);
+};
+
+m.onclick=function(e){
+    if(e.target.tagName==="A"){
+        m.classList.remove("open");
+        bg.classList.remove("on");
+        bg.setAttribute("aria-expanded","false");
+    }
+};
+
+var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+        if(e.isIntersecting){
+            e.target.classList.add("in");
+            io.unobserve(e.target);
+        }
+    });
+},{threshold:.15});
+
+document.querySelectorAll(".rv").forEach(function(el){
+    io.observe(el);
+});
+</script>
+
+</body>
+</html>
